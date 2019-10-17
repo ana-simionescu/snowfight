@@ -1,0 +1,35 @@
+SIMIONESCU ANA-MARIA 313CA
+
+	int main() :
+	Se aloca memoria pentru matricea in care vor fi retinute
+datele despre harta si ghetar. Se aloca memoria pentru vectorul in care se vor retine datele despre elfi. Se citesc datele despre harta
+si despre elfi.
+
+	map** read_comm(...):
+	Se citesc comenzile si se apeleaza functiile corespunzatoare.
+Se returneaza pointer la harta modificata.
+
+	map** meltdown(...):
+	Functia realizeaza realocarea ghetarului si verifica elfii care au parasit ghetarul. Se returneaza pointer la harta modificata.
+
+	void snowstorm(...):
+	Functia calculeaza coordonatele, raza si damage-ul furtunii, scade hp-ul elfilor aflati in raza de actiune si determia elfii eliminati de aceasta.
+
+	void move(...):
+	Functia verifica daca elful poate face mutarea si daca aceasta determina parasirea ghetarului, dar si echiparea cu o noua pereche de manusi
+
+	int combat(...):
+	Functia simuleaza lupta dintre cei doi elfi, modificand hp-ul fiecaruia si returneaza id-ul elfului castigator
+	
+	void scoreboard(...):
+	Functia afiseaza scoreboard-ul. Se aloca memoria pentru un
+nou vector care va fi sortat pentru a nu altera vectorul initial.
+
+	int is_on_the_glacier(...):
+	Functia verifica daca elful se afla pe ghetar, raportand coordonatele sale la centrul ghetarului
+
+	void check_winner(...):
+	Functia afiseaza cine este castigatorul, singurul elf in viata. Nu este apelata decat atunci cand se stie ca mai este un
+singur elf in viata
+
+	
